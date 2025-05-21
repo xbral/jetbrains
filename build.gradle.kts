@@ -96,13 +96,8 @@ tasks {
     )
   }
 
+  // Skip publishing as it's not needed for local builds
   publishPlugin {
-    dependsOn("patchChangelog")
-    token.set(System.getenv("PUBLISH_TOKEN"))
-    channels.set(
-      listOf(
-        properties("pluginVersion").split('-').getOrElse(1) { "default" }.split('.').first()
-      )
-    )
+    enabled = false
   }
 }

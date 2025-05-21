@@ -4,6 +4,7 @@
   <vendor url="https://github.com/getomni" email="maycon.s.santos44@gmail.com">Omni Theme</vendor>
 
   <depends>com.intellij.modules.platform</depends>
+  <idea-version since-build="232" until-build="253.*"/>
 
   <extensions defaultExtensionNs="com.intellij">
     <applicationService serviceImplementation="com.github.getomni.jetbrains.services.MyApplicationService"/>
